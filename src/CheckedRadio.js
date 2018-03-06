@@ -3,7 +3,7 @@ import React from 'react'
 const checkedRadio = props => {
   const styles = {}
   return (
-    <svg className="checked-radio dn" height="30" width="30">
+    <svg className="checked-radio" height="30" width="30">
       <circle
         cx="15"
         cy="15"

@@ -24,11 +24,6 @@ const RadioInput = props => {
     console.log('target.value: ', event.target.value)
     if (event.target.value) {
       console.log('valid!')
-      var clickedInput = document.getElementsByTagName('input')
-      clickedInput.addEventListener('click', function(event) {
-        console.log(event) // The event details
-        console.log(event.target) // The clicked element
-      })
     }
   }
 
