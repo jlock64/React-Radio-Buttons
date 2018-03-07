@@ -2,7 +2,7 @@ import React from 'react'
 
 const uncheckedRadio = props => {
   return (
-    <svg className="unchecked-radio" height="30" width="30">
+    <svg id="unchecked-radio" height="30" width="30">
       <circle
         cx="15"
         cy="15"
