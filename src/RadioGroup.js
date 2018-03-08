@@ -10,17 +10,17 @@ const RadioGroup = props => {
         <span className="red ml1">*</span>
       </p>
       <div className="flex">
-        {props.radioGroup.radios.map((item, index) => {
+        {props.radioGroup.radios.map((radio, index) => {
+          console.log('radio: ', radio)
           return (
             <RadioInput
-              key={'${name}${index}'}
+              key={index}
               name={props.radioGroup.name}
-              item={item}
+              radio={radio}
             />
           )
         })}
       </div>
-      <div className="flex">{/* <button type="submit">Submit</button> */}</div>
     </div>
   )
 }

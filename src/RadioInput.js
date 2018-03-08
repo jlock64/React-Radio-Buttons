@@ -3,29 +3,20 @@ import CheckedRadio from './CheckedRadio'
 import UncheckedRadio from './UncheckedRadio'
 
 const RadioInput = props => {
-  console.log('radioInput props: ', props)
   const styles = {
     radioAppearance: {
       WebkitAppearance: 'none',
       MozAppearance: 'none',
       appearance: 'none'
-      //   borderRadius: '50%',
-      //   width: '16px',
-      //   height: '16px',
-      //   border: '2px solid #81bc01',
-      //   transition: '0.2s all linear',
-      //   outline: 'none',
-      //   marginRight: '5px',
-      //   position: 'relative'
     }
   }
 
-  //   const handleChangeOption = event => {
-  //     console.log('target.value: ', event.target.value)
-  //     if (event.target.value) {
-  //       console.log('valid!')
-  //     }
-  //   }
+  const handleChange = (event, checked) => {
+    console.log('onchangeValue when clicked', props.radio.value)
+    if (props.radio.value) {
+      console.log('i was checked')
+    }
+  }
 
   return (
     <div className="mr3 flex items-center">
@@ -35,12 +26,13 @@ const RadioInput = props => {
         style={styles.radioAppearance}
         className="mr2"
         type="radio"
-        id={props.item.id}
+        id={props.radio.id}
         name={props.name}
-        checked={true}
+        checked={props.checked}
+        onChange={handleChange}
       />
-      <label className="gray helvetica" htmlFor={props.item.id}>
-        {props.item.label}
+      <label className="gray" htmlFor={props.radio.id}>
+        {props.radio.label}
       </label>
     </div>
   )
