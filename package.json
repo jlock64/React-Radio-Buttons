@@ -3,10 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@jrs/trhc-tachyons": "^4.17.1",
+    "ramda": "^0.25.0",
     "react": "^16.2.0",
+    "react-declarative-container": "^1.0.1",
     "react-dom": "^16.2.0",
     "react-scripts": "1.1.1",
+    "tachyons": "^4.9.1",
     "yarn": "^1.5.1"
   },
   "scripts": {

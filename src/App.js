@@ -3,7 +3,7 @@ import logo from './logo.svg'
 import './App.css'
 import Form from './Form'
 import RadioGroup from './RadioGroup'
-import '@jrs/trhc-tachyons'
+import 'tachyons'
 
 class App extends Component {
   render() {
@@ -47,7 +47,8 @@ class App extends Component {
           action={e => {
             e.preventDefault()
             console.log(e.target)
-          }}>
+          }}
+        >
           <RadioGroup radioGroup={contactGroup} />
           <RadioGroup radioGroup={wineGroup} />
           <RadioGroup radioGroup={durationOfTherapyGroup} />
